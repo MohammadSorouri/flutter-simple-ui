@@ -30,13 +30,35 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           Stack(
             children: <Widget>[
-              Column(children: <Widget>[
                 Container(
                   height: 250,
                   width: double.infinity,
                   color: Color(0xfffdd148),
-                )
-              ],)
+                ),
+                Positioned(
+                  bottom: 50,
+                  right: 100,
+                  child: Container(
+                    width: 400,
+                    height: 400,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(200),
+                      color:  Color(0xfffee16d).withOpacity(0.4)
+                    ),
+                  ),
+                ),
+              Positioned(
+                bottom: 50,
+                left: 150,
+                child: Container(
+                  width: 300,
+                  height: 300,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(200),
+                      color: Color(0xfffee16d).withOpacity(.4)
+                  ),
+                ),
+              )
             ],
           )
         ],
