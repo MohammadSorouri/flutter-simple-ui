@@ -48,14 +48,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               Positioned(
-                bottom: 80,
-                left: 230,
+                bottom: 100.0,
+                left: 150.0,
                 child: Container(
-                  width: 250,
-                  height: 250,
+                  width: 300,
+                  height: 300,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(200),
-                      color: Color(0xfffee16d).withOpacity(.4)
+                      color: Color(0xfffee16d).withOpacity(.5)
                   ),
                 ),
               ),
@@ -124,8 +124,83 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(height: 10,)
                 ],
               ),
-
-
+            ],
+          ),
+          SizedBox(height: 10,),
+          Stack(
+            children: <Widget>[
+              SizedBox(height: 10,),
+              Material(
+                elevation: 1,
+                child: Container(
+                  height: 75,
+                  color: Colors.white,
+                ),
+              ),
+              Row(
+                children: <Widget>[
+                  Container(
+                    height: 75,
+                    width: MediaQuery.of(context).size.width/4,
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          height: 50,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(image: AssetImage("assets/sofas.png"))
+                          ),
+                        ),
+                        Text("Sofas",style: TextStyle(fontFamily: "Quicksand"),)
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 75,
+                    width: MediaQuery.of(context).size.width/4,
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          height: 50,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(image: AssetImage("assets/wardrobe.png"))
+                          ),
+                        ),
+                        Text("Wardrobe",style: TextStyle(fontFamily: "Quicksand"),)
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 75,
+                    width: MediaQuery.of(context).size.width/4,
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          height: 50,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(image: AssetImage("assets/desks.png"))
+                          ),
+                        ),
+                        Text("Desks",style: TextStyle(fontFamily: "Quicksand"),)
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: 75,
+                    width: MediaQuery.of(context).size.width/4,
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                          height: 50,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(image: AssetImage("assets/dressers.png"))
+                          ),
+                        ),
+                        Text("Dressers",style: TextStyle(fontFamily: "Quicksand"),)
+                      ],
+                    ),
+                  ),
+                ],
+              )
             ],
           )
         ],
