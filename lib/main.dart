@@ -101,7 +101,27 @@ class _MyHomePageState extends State<MyHomePage> {
                       fontSize: 23,
                       fontWeight: FontWeight.bold,
                     ),),
-                  )
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 25,left: 15,right: 15),
+                    child: Material(
+                      borderRadius: BorderRadius.circular(5),
+                      elevation: 5,
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          prefixIcon: Icon(Icons.search,color: Color(0xffFEDF62),size: 30,),
+                          hintText: "Search",
+                          contentPadding: EdgeInsets.only(left: 15,top: 15),
+                          hintStyle: TextStyle(
+                            color: Colors.grey,
+                            fontFamily: "Quicksand",
+                          )
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 10,)
                 ],
               ),
 
