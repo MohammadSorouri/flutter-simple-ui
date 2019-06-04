@@ -58,6 +58,30 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Color(0xfffee16d).withOpacity(.4)
                   ),
                 ),
+              ),
+              Padding(
+                     padding: EdgeInsets.only(top: 15,left: 20,right: 20),
+                     child: Row(
+                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                       children: <Widget>[
+                         Container(
+                           height: 50,
+                           width: 50,
+                           decoration: BoxDecoration(
+                             image: DecorationImage(image: AssetImage("assets/chris.jpg"),),
+                             borderRadius: BorderRadius.circular(25),
+                             border: Border.all(
+                               color: Colors.white,
+                               width: 2
+                             )
+                           ),
+                         ),
+                         IconButton(
+                           icon: Icon(Icons.menu,color: Colors.white,size: 30.2,),
+                           onPressed: (){},
+                         ),
+                       ],
+                     ),
               )
             ],
           )
