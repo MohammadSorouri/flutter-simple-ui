@@ -25,6 +25,22 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Scaffold();
+    return Scaffold(
+      body: ListView(
+        children: <Widget>[
+          Stack(
+            children: <Widget>[
+              Column(children: <Widget>[
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  color: Color(0xfffdd148),
+                )
+              ],)
+            ],
+          )
+        ],
+      ),
+    );
   }
 }
