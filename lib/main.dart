@@ -48,41 +48,64 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               Positioned(
-                bottom: 50,
-                left: 150,
+                bottom: 80,
+                left: 230,
                 child: Container(
-                  width: 300,
-                  height: 300,
+                  width: 250,
+                  height: 250,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(200),
                       color: Color(0xfffee16d).withOpacity(.4)
                   ),
                 ),
               ),
-              Padding(
-                     padding: EdgeInsets.only(top: 15,left: 20,right: 20),
-                     child: Row(
-                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                       children: <Widget>[
-                         Container(
-                           height: 50,
-                           width: 50,
-                           decoration: BoxDecoration(
-                             image: DecorationImage(image: AssetImage("assets/chris.jpg"),),
-                             borderRadius: BorderRadius.circular(25),
-                             border: Border.all(
-                               color: Colors.white,
-                               width: 2
-                             )
-                           ),
-                         ),
-                         IconButton(
-                           icon: Icon(Icons.menu,color: Colors.white,size: 30.2,),
-                           onPressed: (){},
-                         ),
-                       ],
-                     ),
-              )
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.only(top: 15,left: 20,right: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Container(
+                          height: 50,
+                          width: 50,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(image: AssetImage("assets/chris.jpg"),),
+                              borderRadius: BorderRadius.circular(25),
+                              border: Border.all(
+                                  color: Colors.white,
+                                  width: 2
+                              )
+                          ),
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.menu,color: Colors.white,size: 30.2,),
+                          onPressed: (){},
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 50,left: 15),
+                    child: Text("Hello, Mohammad",style: TextStyle(
+                      fontFamily: "Quicksand",
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 15,left: 15),
+                    child: Text("What do you want to buy?",style: TextStyle(
+                      fontFamily: "Quicksand",
+                      fontSize: 23,
+                      fontWeight: FontWeight.bold,
+                    ),),
+                  )
+                ],
+              ),
+
+
             ],
           )
         ],
